@@ -10,7 +10,7 @@ body{
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	margin-bottom: 10%;
+	margin-bottom: 3%;
 
 }
 
@@ -51,7 +51,7 @@ body{
 	padding-right: 6%;
 }
 .p-img{
-	max-width: 25px;
+	max-width: 20px;
 	display: inline-block;
 	margin-left: 5px;
 
@@ -63,6 +63,10 @@ body{
 	font-size: 2em;
 	color:white;
 	
+}
+
+.fa-globe:before{
+	color: gainsboro;
 }
 
 .g-icons{
@@ -135,10 +139,11 @@ body{
 	font-weight: 900;
 	display: inline;
 	padding: 80px 0;
-}
+} 
+
 .status{
 	background-color: #f6f7f9;
-    padding: 5px;
+	padding: 5px;
 	margin: 0 5px 0 0;
 }
 .post-header{
@@ -155,7 +160,7 @@ body{
 .write-post{
 	background-color: white;
 	padding: 10px;
-	margin: 0 5px 0 0;
+	margin: 0 5px 5% 0;
 }
 .post-desc{
 	border: none;
@@ -174,18 +179,57 @@ body{
 }
 
 .form-control:focus {border-color:rgba(100,100,100,1)!important;
--webkit-box-shadow: none!important;
-    -moz-box-shadow: none!important;
-    box-shadow: none!important;
+
+	box-shadow: none!important;
+}
+.user-post{
+	background-color: white;
+	padding: 10px 10px 0 10px;
+	margin: 0 5px 0 0;
+}
+.user-post-header{
+	padding-bottom: 5px;
+}
+.user-post-img{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e9ebee;
+
+}
+.p-behav{
+	display: inline-block;
+}
+.text-p{
+	color: #8a8a8a;
+	display: inline-block;
+}
+.user-comment{
+	border:1px solid #e1e1e3;
+	background-color: #f6f7f9;
+	padding: 10px 10px 0 10px;
+	margin: 0 5px 0 0;
+}
+.comment-holder{
+	border:1px solid #e9ebee;
+	background-color: white;
+}
+.right-align{
+	text-align: right;
+}
+
+body > div.row > div > div > div.row > div > div.row.no-pad > div.col-xs-8 > div.row.user-post.no-pad > div.row.no-pad.fb-icon > div:nth-child(1) > div > a:nth-child(1) > i{
+	color:#8a8a8a;
+}
+body > div > div > div > div.row > div > div.row.no-pad > div.col-xs-8 > div.row.user-post.no-pad > div.row.no-pad.fb-icon > div:nth-child(1) > div:nth-child(2){
+	padding-left:0;
 }
 body > div > div > div > div.col-md-3.col-xs-3.sidebar > div > div > ul > li> a{
 	color: black;
 }
 ul{ 
-  list-style-type: none;
-  padding: 0;
-  font-size: 20px;
-  
+	list-style-type: none;
+	padding: 0;
+	font-size: 20px;
+
 }
 
 }
@@ -196,14 +240,14 @@ ul{
 		margin-left:50px;
 	}
 	.web-link {
-    font-size: 15pt;
-  }
+		font-size: 15pt;
+	}
 	
 }
 @media (max-width: 440px) {
 	.web-link {
-    font-size: 8pt;
-  }
+		font-size: 8pt;
+	}
 }
 
 

@@ -86,3 +86,43 @@ function showComments(){
 		$commentList.append(commentHtml);
 	}
 }
+
+var toggle=true;
+
+	$(window).resize(function() {
+		
+	if($(window).width()>992){
+		$('.affix').css('left','');
+		$('.affix').css('background','');
+		$('.affix').css('transition','');
+		$('.affix').css('width','17%');
+		$('.web-link').css('font-size','1vw');
+		$('.sidebar').css('transition','');
+		$('.sidebar-links').css('font-size','1vw');
+		$('.img-overlay').css('display','none');
+	}
+	
+	});
+
+	$('#sidebar-toggle').on('click',function(){
+	
+		if(toggle)
+		{
+			$('.img-overlay').css('display','flex');
+			$('.affix').css('background','#eaebef');
+			$('.affix').css('left','0');
+			$('.web-link').css('font-size','2vw');
+			$('.sidebar-links').css('font-size','1.2rem');
+			$('.affix').css('width','230px');
+			$('.affix').css('z-index','99999');
+		}
+		else
+		{
+			$('.img-overlay').css('display','none');
+			$('.affix').css('background','#eaebef');
+			$('.affix').css('left','-100%');
+			
+		}
+		toggle=!toggle;
+
+	});

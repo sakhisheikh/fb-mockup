@@ -3,6 +3,7 @@
 body{
 	background-color: #e9ebee;
 	height: 100%;
+	font-size: calc(0.5em + 0.5vw);
 }
 
 .bottom-main{
@@ -146,6 +147,9 @@ body{
 	padding: 5px;
 	margin: 0 5px 0 0;
 }
+.about-fb{
+	background-color: #f6f7f9;
+}
 .post-header{
 	padding: 0 3px;
 }
@@ -166,17 +170,31 @@ body{
 	border: none;
 	box-shadow: none;
 }
+.grey{
+	color: gainsboro;
 }
 .img-drop{
 	text-align: right;
 	margin-right: 0;
 }
-
+.right-images{
+	margin: 5px 5px 0 5px;
+}
 .personal-web{
 	padding:5px;
 	background-color: white;
 	margin: 0 0 10px 5px;
 }
+.images-web{
+	margin: 0 0 5px 5px;
+	background-color: white;
+}
+.about-web{
+	padding:5px;
+	background-color: #f6f7f9;
+	margin: 0 0 0 5px;
+}
+
 
 .form-control:focus {border-color:rgba(100,100,100,1)!important;
 
@@ -195,6 +213,12 @@ body{
 	border-bottom: 1px solid #e9ebee;
 
 }
+.blue-back{
+	background-color: #5890ff;
+	height: 80px;
+	margin: 5px 5px 5px 0;
+
+}
 .p-behav{
 	display: inline-block;
 }
@@ -202,9 +226,16 @@ body{
 	color: #8a8a8a;
 	display: inline-block;
 }
+.comment-wrapper{
+	display: none;
+}
 .user-comment{
 	border:1px solid #e1e1e3;
 	background-color: #f6f7f9;
+	padding: 10px 10px 0 10px;
+	margin: 0 5px 0 0;
+}
+.comment-wrapper{
 	padding: 10px 10px 0 10px;
 	margin: 0 5px 0 0;
 }
@@ -216,11 +247,38 @@ body{
 	text-align: right;
 }
 
+.next-post{
+	margin-top: 30px;
+}
+
+.indent-inside{
+	padding: 10px;
+}
+.low-indent-inside{
+	padding: 5px;
+}
+.border-bottom{
+	
+	border-bottom:1px solid #e9ebee;
+}
+.bottom-align{
+	    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 10px;
+}
+#player_uid_563157928_1 > div.ytp-cued-thumbnail-overlay > div{
+	background-image: none;
+}
+#player_uid_563157928_1{
+	background-color: #5890ff;
+}
 body > div.row > div > div > div.row > div > div.row.no-pad > div.col-xs-8 > div.row.user-post.no-pad > div.row.no-pad.fb-icon > div:nth-child(1) > div > a:nth-child(1) > i{
 	color:#8a8a8a;
 }
-body > div > div > div > div.row > div > div.row.no-pad > div.col-xs-8 > div.row.user-post.no-pad > div.row.no-pad.fb-icon > div:nth-child(1) > div:nth-child(2){
-	padding-left:0;
+
+#post-list > div.row.user-post.no-pad > div.row.no-pad.fb-icon > div:nth-child(1) > div:nth-child(2){
+	padding-left: 0;
 }
 body > div > div > div > div.col-md-3.col-xs-3.sidebar > div > div > ul > li> a{
 	color: black;
